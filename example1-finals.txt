@@ -195,6 +195,62 @@ public class main1 {
 
 challenge #2 - Conditional Statements:
 
+package finals;
+import java.util.Scanner;
+
+public class main1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("*************************************");
+        System.out.print("Please enter your birth month (1 – 12) : ");
+        int month = scanner.nextInt();
+        System.out.println("*************************************");
+
+        switch (month) {
+            case 1:
+                System.out.println("Welcome CAPRICORN");
+                break;
+            case 2:
+                System.out.println("Welcome PISCES");
+                break;
+            case 3:
+                System.out.println("Welcome AQUARIUS");
+                break;
+            case 4:
+                System.out.println("Welcome LEO");
+                break;
+            case 5:
+                System.out.println("Welcome GEMINI");
+                break;
+            case 6:
+                System.out.println("Welcome CANCER");
+                break;
+            case 7:
+                System.out.println("Welcome VIRGO");
+                break;
+            case 8:
+                System.out.println("Welcome LIBRA");
+                break;
+            case 9:
+                System.out.println("Welcome SCORPIO");
+                break;
+            case 10:
+                System.out.println("Welcome SAGITTARIUS");
+                break;
+            case 11:
+                System.out.println("Welcome CAPRICORN");
+                break;
+            case 12:
+                System.out.println("Welcome AQUARIUS");
+                break;
+          
+        }
+
+        scanner.close(); 
+        
+    }
+}
+
 
 
 
