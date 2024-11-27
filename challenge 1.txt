@@ -1,0 +1,198 @@
+challenge 1:
+
+package finals;
+
+import java.util.Scanner; // Import Scanner class
+
+public class main1 { // Class name should start with an uppercase letter
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the grade for the first grading period: ");
+        double grade1 = scanner.nextDouble();
+        System.out.print("Enter the grade for the second grading period: ");
+        double grade2 = scanner.nextDouble();
+        System.out.print("Enter the grade for the third grading period: ");
+        double grade3 = scanner.nextDouble();
+
+       
+        double generalAverage = (grade1 + grade2 + grade3) / 3;
+        System.out.printf("General Average (GA): %.2f\n", generalAverage);
+
+        // Determine Equivalent Grade (EG) and Remarks
+        if (generalAverage >= 96) {
+            System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+        } else if (generalAverage >= 94) {
+            System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+        } else if (generalAverage >= 91) {
+            System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+        } else if (generalAverage >= 88) {
+            System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+        } else if (generalAverage >= 85) {
+            System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+        } else if (generalAverage >= 82) {
+            System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+        } else if (generalAverage >= 79) {
+            System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+        } else if (generalAverage >= 76) {
+            System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+        } else if (generalAverage == 75) {
+            System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+        } else {
+            System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+        }
+
+        scanner.close(); // Close the scanner
+    }
+}
+
+challenge 2: 
+
+package finals;
+
+import java.util.Scanner;
+
+public class main1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the grade for the first grading period: ");
+        double grade1 = scanner.nextDouble();
+        System.out.print("Enter the grade for the second grading period: ");
+        double grade2 = scanner.nextDouble();
+        System.out.print("Enter the grade for the third grading period: ");
+        double grade3 = scanner.nextDouble();
+
+        
+        double generalAverage = (grade1 + grade2 + grade3) / 3;
+        System.out.printf("General Average (GA): %.2f\n", generalAverage);
+
+   
+        int category = (int) generalAverage;
+
+       
+        switch (category) {
+            case 96, 97, 98, 99, 100 -> System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+            case 94, 95 -> System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+            case 91, 92, 93 -> System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+            case 88, 89, 90 -> System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+            case 85, 86, 87 -> System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+            case 82, 83, 84 -> System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+            case 79, 80, 81 -> System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+            case 76, 77, 78 -> System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+            case 75 -> System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+            default -> {
+                if (category < 75) {
+                    System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+                } else {
+                    System.out.println("Invalid grade.");
+                }
+            }
+        }
+
+        scanner.close(); 
+    }
+}
+
+LOOP 
+Sample 1: 
+
+package finals;
+
+import java.util.Scanner;
+
+public class main1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+      int a = 0;
+      
+      while (a < 10) {
+    	  
+    	 System.out.println(a);
+    	 a++;
+      }
+      
+    }
+    
+}
+
+
+Loop 
+Challenge 1:
+
+package finals;
+
+public class main1 {
+    public static void main(String[] args) {
+        int number = 143; // Starting number
+
+        
+        while (number <= 220) {
+            System.out.println(number);
+            number++; 
+        }
+    }
+}
+
+Challenge 2:
+
+
+package finals;
+
+public class main1 {
+    public static void main(String[] args) {
+        int number = 220; // Starting number
+
+        
+        while (number >= 143) {
+            System.out.println(number);
+            number--; 
+        }
+    }
+}
+
+
+
+QUIZ 
+
+package finals;
+
+import java.util.Scanner;
+
+public class main1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char choice;
+
+        do {
+          
+            System.out.println("**********************************");
+            System.out.print("Please enter 1st number: ");
+            int num1 = scanner.nextInt();
+            System.out.print("Please enter 2nd number: ");
+            int num2 = scanner.nextInt();
+            System.out.println("**********************************");
+
+           
+            int sum = num1 + num2;
+            System.out.println("The sum is: " + sum);
+            System.out.println("**********************************");
+
+           
+            System.out.print("Do you want to try again [y/n]: ");
+            choice = scanner.next().charAt(0);
+            System.out.println("**********************************");
+        } while (choice == 'y' || choice == 'Y'); 
+
+        System.out.println("Program terminated. Goodbye!");
+        scanner.close();
+    }
+}
+
+
+
+
