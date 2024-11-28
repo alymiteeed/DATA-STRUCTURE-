@@ -189,7 +189,7 @@ public class main1 {
         } while (choice == 'y' || choice == 'Y'); 
 
         System.out.println("Program terminated. Goodbye!");
-        scanner.close();
+        input.close();
     }
 }
 
