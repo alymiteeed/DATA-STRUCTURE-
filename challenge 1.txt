@@ -92,7 +92,7 @@ public class main1 {
             }
         }
 
-        scanner.close(); 
+        input.close(); 
     }
 }
 
