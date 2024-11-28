@@ -2,9 +2,9 @@ challenge 1:
 
 package finals;
 
-import java.util.Scanner; // Import Scanner class
+import java.util.Scanner; 
 
-public class main1 { // Class name should start with an uppercase letter
+public class main1 { 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -43,7 +43,7 @@ public class main1 { // Class name should start with an uppercase letter
             System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
         }
 
-        scanner.close(); // Close the scanner
+        scanner.close(); 
     }
 }
 
