@@ -6,21 +6,21 @@ import java.util.Scanner;
 
 public class main1 { 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         
         System.out.print("Enter the grade for the first grading period: ");
-        double grade1 = scanner.nextDouble();
+        double grade1 = input.nextDouble();
         System.out.print("Enter the grade for the second grading period: ");
-        double grade2 = scanner.nextDouble();
+        double grade2 = input.nextDouble();
         System.out.print("Enter the grade for the third grading period: ");
-        double grade3 = scanner.nextDouble();
+        double grade3 = input.nextDouble();
 
        
         double generalAverage = (grade1 + grade2 + grade3) / 3;
         System.out.printf("General Average (GA): %.2f\n", generalAverage);
 
-        // Determine Equivalent Grade (EG) and Remarks
+       
         if (generalAverage >= 96) {
             System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
         } else if (generalAverage >= 94) {
@@ -55,15 +55,15 @@ import java.util.Scanner;
 
 public class main1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         
         System.out.print("Enter the grade for the first grading period: ");
-        double grade1 = scanner.nextDouble();
+        double grade1 = input.nextDouble();
         System.out.print("Enter the grade for the second grading period: ");
-        double grade2 = scanner.nextDouble();
+        double grade2 = input.nextDouble();
         System.out.print("Enter the grade for the third grading period: ");
-        double grade3 = scanner.nextDouble();
+        double grade3 = input.nextDouble();
 
         
         double generalAverage = (grade1 + grade2 + grade3) / 3;
@@ -165,16 +165,16 @@ import java.util.Scanner;
 
 public class main1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         char choice;
 
         do {
           
             System.out.println("**********************************");
             System.out.print("Please enter 1st number: ");
-            int num1 = scanner.nextInt();
+            int num1 = input.nextInt();
             System.out.print("Please enter 2nd number: ");
-            int num2 = scanner.nextInt();
+            int num2 = input.nextInt();
             System.out.println("**********************************");
 
            
@@ -184,7 +184,7 @@ public class main1 {
 
            
             System.out.print("Do you want to try again [y/n]: ");
-            choice = scanner.next().charAt(0);
+            choice = input.next().charAt(0);
             System.out.println("**********************************");
         } while (choice == 'y' || choice == 'Y'); 
 
