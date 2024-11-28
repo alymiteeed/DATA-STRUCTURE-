@@ -43,7 +43,7 @@ public class main1 {
             System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
         }
 
-        scanner.close(); 
+        input.close(); 
     }
 }
 
