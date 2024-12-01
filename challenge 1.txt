@@ -67,7 +67,7 @@ public class main1 {
 
         
         double generalAverage = (grade1 + grade2 + grade3) / 3;
-        System.out.printf("General Average (GA): %.2f\n", generalAverage);
+        System.out.printf("General Average (GA): ", generalAverage);
 
    
         int category = (int) generalAverage;
