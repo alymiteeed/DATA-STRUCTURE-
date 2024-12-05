@@ -1,0 +1,40 @@
+package finals;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class main2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+      
+        System.out.print("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.print("Enter First Name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Enter Middle Initial: ");
+        char middleInitial = scanner.next().charAt(0);
+
+      
+        System.out.println("\nLast Name: " + lastName);
+        System.out.println("First Name: " + firstName);
+        System.out.println("Middle Initial: " + middleInitial);
+
+       
+        try {
+            FileWriter writer = new FileWriter("output.txt");
+            writer.write("Last Name: " + lastName + "\n");
+            writer.write("First Name: " + firstName + "\n");
+            writer.write("Middle Initial: " + middleInitial + "\n");
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        scanner.close();
+    }
+}
